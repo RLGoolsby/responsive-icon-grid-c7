@@ -1,0 +1,17 @@
+{
+  "name": "responsive-icon-grid-c7",
+  "homepage": "https://github.com/RLGoolsby/responsive-icon-grid-c7",
+  "authors": [
+    "Rhonda Goolsby <rlgoolsby@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
