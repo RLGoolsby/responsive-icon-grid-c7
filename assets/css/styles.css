@@ -21,18 +21,23 @@ i {
   border: 2px solid white;
   margin: 1.5em 0em 0em 6.5em;
   width: 7em;
-  display: block;
-  /*******************************/
-  /**   start of words     **/
-  /**   end of words      **/ }
-  .stick p {
-    color: #E8EAEB; }
+  display: block; }
 
+/*******************************/
+/**   start of words     **/
+h3 {
+  padding-left: 7em;
+  color: #E8EAEB; }
+
+p {
+  color: #E8EAEB; }
+
+/**   end of words      **/
 /**  start of on hover to change background colors  **/
 .col:hover {
   background-color: #E8EAEB;
   cursor: pointer; }
-  .col:hover .fa, .col:hover h3, .col:hover p, .col:hover .stick {
+  .col:hover .fa, .col:hover h3 {
     color: black; }
 
 /**  end of on hover     **/

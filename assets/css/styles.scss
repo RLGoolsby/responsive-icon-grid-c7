@@ -35,14 +35,16 @@ i{
   margin: 1.5em 0em 0em 6.5em;
   width: 7em;
   display: block;
+
+}
 /*******************************/
 
 
 /**   start of words     **/
 h3{
-  // padding-top: 2em;
-// padding: 3em;
-  // color: $h3-color;
+// padding-top: 2em;
+padding-left: 7em;
+color: $h3-color;
 }
 
 p{
@@ -51,10 +53,10 @@ p{
 /**   end of words      **/
 
 
-}
+
 /**  start of on hover to change background colors  **/
 .col:hover{
-  .fa, h3, p, .stick{
+  .fa, h3, {
     color: black;
   }
   background-color: $h3-color;
@@ -101,7 +103,7 @@ p{
 	float:left;
   height: 280px;
   transition: background 1s, transform 1s;
-  ;
+
   // padding: 0em 0.1em 0em 0.1em;
 
 	// margin: 1% 0 1% 1.6%;
