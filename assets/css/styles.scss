@@ -14,6 +14,11 @@ body {
   margin-right: 1%;
 }
 
+
+small{
+  padding-left: 2em;
+}
+
 /**    start of icons      **/
 i{
   color: $h3-color;
@@ -30,9 +35,10 @@ i{
 
 
 /**  the line under the icon  **/
-.stick{
-  border: 2px solid white;
-  margin: 1.5em 0em 0em 6.5em;
+.stick{/*  Bar  */
+  border: 1px solid $body;
+  margin: 1em 0em 0em 6em;
+  /* margin: 0 auto; */
   width: 7em;
   display: block;
 
@@ -43,32 +49,53 @@ i{
 /**   start of words     **/
 h3{
 // padding-top: 2em;
-padding-left: 7em;
+font-size: 1.5em;
+padding-left: 4.5em;
 color: $h3-color;
 }
 
 p{
-  color: $h3-color;
+  padding-left: 1.5em;
+  font-size: 1em;
+  color: #343536;
 }
 /**   end of words      **/
+/****************************************************/
+
+/***       Borders around boxes        **/
+// #one{
+//   border-bottom: 1px solid $body;
+// }
+//
+// #two{
+//   border-bottom: 1px solid $body;
+//   border-right: 1px solid $body;
+//   border-left: 1px solid $body
+// }
+//
+// #three{
+//   border-bottom: 1px solid $body;
+//   border-left: 1px solid $body;
+// }
+//
+// #five{
+//   border-right: 1px solid $body;
+//   border-left: 1px solid $body;
+// }
+
 
 
 
 /**  start of on hover to change background colors  **/
 .col:hover{
-  .fa, h3, {
-    color: black;
+  .fa, h3, p, {
+    color: #343536;
   }
-  background-color: $h3-color;
+  background-color: $body;
   cursor: pointer;
 }
 
-// .fa:hover{
-//   p{
-//     color: black;
-//   }
-//
-// }
+
 
 // .col:hover{
 //   background-color: white;
@@ -98,11 +125,12 @@ p{
 /*  COLUMN SETUP  */
 .col {
   background-color: #343536;
-  border: 1px solid black;
+  // border-spacing: 1px solid black;
 	display: block;
 	float:left;
   height: 280px;
   transition: background 1s, transform 1s;
+  // border-radius: 5px;
 
   // padding: 0em 0.1em 0em 0.1em;
 
