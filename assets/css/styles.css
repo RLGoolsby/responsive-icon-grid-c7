@@ -16,29 +16,33 @@ i {
 .fa {
   padding-top: 0.2em;
   padding-left: 30%;
-  font-size: 6em; }
+  font-size: 6em;
+  transition: transform 0.2s; }
 
 /**    end of icons      **/
 /**  the line under the icon  **/
 .stick {
   /*  Bar  */
-  border: 1px solid #D4D6D6;
-  margin: 1em 0em 0em 6em;
+  border: 2px solid #D4D6D6;
+  margin: 0 auto;
   /* margin: 0 auto; */
   width: 7em;
-  display: block; }
+  display: block;
+  transition: transform 0.2s; }
 
 /*******************************/
 /**   start of words     **/
 h3 {
   font-size: 1.5em;
   padding-left: 4.5em;
-  color: #E8EAEB; }
+  color: #E8EAEB;
+  transition: transform 0.2s; }
 
 p {
   padding-left: 1.5em;
   font-size: 1em;
-  color: #343536; }
+  color: #343536;
+  transition: transform 0.2s; }
 
 /**   end of words      **/
 /****************************************************/
@@ -49,6 +53,13 @@ p {
   cursor: pointer; }
   .col:hover .fa, .col:hover h3, .col:hover p {
     color: #343536; }
+  .col:hover .stick {
+    border-color: #343536;
+    transform: translateY(0.7in); }
+  .col:hover .fa {
+    transform: translateY(0.16in); }
+  .col:hover h3, .col:hover p {
+    transform: translateY(-0.1in); }
 
 /**  end of on hover     **/
 /***********************************************************/

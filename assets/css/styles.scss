@@ -29,6 +29,7 @@ i{
   padding-top: 0.2em;
   padding-left: 30%;
   font-size: 6em;
+  transition: transform .2s
   // border-bottom: 2px solid white;
 }
 /**    end of icons      **/
@@ -36,11 +37,12 @@ i{
 
 /**  the line under the icon  **/
 .stick{/*  Bar  */
-  border: 1px solid $body;
-  margin: 1em 0em 0em 6em;
+  border: 2px solid $body;
+  margin: 0 auto;
   /* margin: 0 auto; */
   width: 7em;
   display: block;
+  transition: transform .2s
 
 }
 /*******************************/
@@ -52,12 +54,14 @@ h3{
 font-size: 1.5em;
 padding-left: 4.5em;
 color: $h3-color;
+transition: transform .2s
 }
 
 p{
   padding-left: 1.5em;
   font-size: 1em;
   color: #343536;
+  transition: transform .2s
 }
 /**   end of words      **/
 /****************************************************/
@@ -91,6 +95,17 @@ p{
   .fa, h3, p, {
     color: #343536;
   }
+  .stick{
+    border-color: #343536;
+    transform: translateY(.7in);
+  }
+  .fa{
+    transform: translateY(.16in);
+  }
+  h3, p{
+    transform: translateY(-.1in);
+  }
+
   background-color: $body;
   cursor: pointer;
 }
