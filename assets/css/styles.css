@@ -48,17 +48,17 @@ p {
 /****************************************************/
 /***       Borders around boxes        **/
 /**  start of on hover to change background colors  **/
-.col:hover {
+.col:hover, .col:focus {
   background-color: #D4D6D6;
   cursor: pointer; }
-  .col:hover .fa, .col:hover h3, .col:hover p {
+  .col:hover .fa, .col:hover h3, .col:hover p, .col:focus .fa, .col:focus h3, .col:focus p {
     color: #343536; }
-  .col:hover .stick {
+  .col:hover .stick, .col:focus .stick {
     border-color: #343536;
     transform: translateY(0.7in); }
-  .col:hover .fa {
+  .col:hover .fa, .col:focus .fa {
     transform: translateY(0.16in); }
-  .col:hover h3, .col:hover p {
+  .col:hover h3, .col:hover p, .col:focus h3, .col:focus p {
     transform: translateY(-0.1in); }
 
 /**  end of on hover     **/

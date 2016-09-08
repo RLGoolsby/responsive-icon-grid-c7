@@ -91,7 +91,7 @@ p{
 
 
 /**  start of on hover to change background colors  **/
-.col:hover{
+.col:hover, .col:focus{
   .fa, h3, p, {
     color: #343536;
   }
