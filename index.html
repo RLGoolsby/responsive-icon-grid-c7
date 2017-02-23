@@ -2,33 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script scr="bower_components/jquery/src/jquery.js"></script>
+
     <link rel="stylesheet" href="bower_components/meyer-reset/stylesheets/_meyer-reset.scss">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="bower_components/susy/sass/_suzy.scss">
-    <link rel="stylesheet" href="bower_components/templates/project/_grid.scss">
+    <link rel="stylesheet" href="bower_components/susy/sass/suzy.scss">
+    <link rel="stylesheet" href="bower_components/dist/css/less/mixins/grid_framework.less">
+
     <title>responsive-icon-grid</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <link rel="stylesheet" href="assets/css/styles.css">
 
   </head>
   <body>
 
-  <div class="main">
+  <!-- <div class="main"> -->
 
     <div class"container-fluid"><!--  BOOTSTRAP --->
 
       <div class="page-header">
         <h1>Responsive-Icon-Grid<small>Transportation</small></h1>
-    </div>
+      </div><!-- end of page header -->
 <!---  End of Bootstrap   ----->
 
 <!---    RESPONSIVE GRID    ------->
-  <div class="section group">
+  <!-- <div class="section group"> -->
 <!---         FIRST ROW    ------------->
-      <div class="col span_1_of_3">
+  <div class="row">
+      <div class="col-md-4">
         <ul class="col1" id="one">
           <i class="fa fa-bus" aria-hidden="true"></i>
             <span class="stick"></span>
@@ -38,7 +41,7 @@
       </div>
 
 
-    	<div class="col span_1_of_3">
+    	<div class="col-md-4">
         <ul class="col2" id="two">
           <i class="fa fa-bicycle" aria-hidden="true"></i>
             <span class="stick"></span>
@@ -47,7 +50,7 @@
         </ul>
     	</div>
 
-      <div class="col span_1_of_3">
+      <div class="col-md-4">
         <ul class="col3" id="three">
           <i class="fa fa-taxi" aria-hidden="true"></i>
             <span class="stick"></span>
@@ -55,13 +58,15 @@
             <p>New York City</P>
         </ul>
       </div>
-  </div>
+  </div><!-- end of row -->
+<!-- </div> -->
 <!--------------------------------------->
 
 
-  <div class="section group">
+  <!-- <div class="section group"> -->
 <!---         SECOND ROW    ------------->
-      <div class="col span_1_of_3">
+    <div class="row">
+      <div class="col-md-4">
         <ul class="col1" id="four">
           <i class="fa fa-train" aria-hidden="true"></i>
             <span class="stick"></span>
@@ -71,7 +76,7 @@
       </div>
 
 
-    	<div class="col span_1_of_3">
+    	<div class="col-md-4">
         <ul class="col2" id="five">
           <i class="fa fa-rocket" aria-hidden="true"></i>
             <span class="stick"></span>
@@ -80,7 +85,7 @@
         </ul>
     	</div>
 
-      <div class="col span_1_of_3">
+      <div class="col-md-4">
         <ul class="col3" id="six">
           <i class="fa fa-plane" aria-hidden="true"></i>
             <span class="stick"></span>
@@ -88,14 +93,18 @@
             <p>Fly<p>
         </ul>
     </div>
-  </div>
+  </div><!-- end of row -->
+
 <!--- END OF RESPONSIVE GRID         ------>
 
 
 
 
-      </div>
-    </div>
+    </div><!-- end of container-fluid -->
+    <script scr="bower_components/jquery/src/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="less.js" type="text/javascript"></script>
+    
+
   </body>
 </html>

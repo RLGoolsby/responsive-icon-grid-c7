@@ -8,21 +8,34 @@ body {
   background-color: $body;
 }
 
-/***    main container div  **/
+/*** bootstrap wrapper **/
 
-.main{
+.container-fluid{
   margin-left: 1%;
   margin-right: 1%;
 }
 
-
-small{
-  padding-left: 2em;
+ @grid-columns{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: yellowgreen;
 }
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+
+// small{
+//   padding-left: 2em;
+// }
 
 /**    start of icons      **/
 i{
-  color: $h3-color;
+  color: blue;
 
 }
 
@@ -31,10 +44,16 @@ i{
   padding-left: 30%;
   font-size: 6em;
   transition: transform .2s
-  // border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
 /**    end of icons      **/
 
+
+ul{
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-color: indianred;
+}
 
 /**  the line under the icon  **/
 .stick{/*  Bar  */
@@ -69,7 +88,7 @@ p{
 
 /***       Borders around boxes        **/
 // #one{
-//   border-bottom: 1px solid $body;
+//   background-color: blue;
 // }
 //
 // #two{
@@ -92,37 +111,37 @@ p{
 
 
 /**  start of on hover to change background colors  **/
-.col:hover, .col:focus{
-  .fa, h3, p, {
-    color: #343536;
-  }
-  .stick{
-    border-color: #343536;
-    transform: translateY(.7in);
-  }
-  .fa{
-    transform: translateY(.16in);
-  }
-  h3, p{
-    transform: translateY(-.1in);
-  }
-
-  background-color: $body;
-  cursor: pointer;
-}
-
-
-
-// .col:hover{
-//   background-color: white;
+// .col-md-4:hover{
+//   .fa, h3, p, {
+//     color: #343536;
+//   }
+//   .stick{
+//     border-color: #343536;
+//     transform: translateY(.7in);
+//   }
+//   .fa{
+//     transform: translateY(.16in);
+//   }
+//   h3, p{
+//     transform: translateY(-.1in);
+//   }
+//
+//   background-color: $body;
 //   cursor: pointer;
 // }
+
+
+
+.col:hover{
+  background-color: white;
+  cursor: pointer;
+}
 // .fa:hover{
 //   p{
 //     color: $h3-color;
 //   }
 // }
-
+//
 
 /**  end of on hover     **/
 
@@ -132,14 +151,14 @@ p{
 /***********************************************************/
 /**   Reponsive Grid  positioning of  columns             **/
 /*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
+// .section {
+// 	clear: both;
+// 	padding: 0px;
+// 	margin: 0px;
+// }
 
 /*  COLUMN SETUP  */
-.col {
+.col-md-4 {
   background-color: #343536;
   // border-spacing: 1px solid black;
 	display: block;
@@ -152,20 +171,35 @@ p{
 
 	// margin: 1% 0 1% 1.6%;
 }
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF THREE  */
-.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.13%; }
-.span_1_of_3 { width: 32.26%; }
+// .col:first-child { margin-left: 0; }
+//
+// /*  GROUPING  */
+// .group:before,
+// .group:after { content:""; display:table; }
+// .group:after { clear:both;}
+// .group { zoom:1; /* For IE 6/7 */ }
+// /*  GRID OF THREE  */
+// .span_3_of_3 { width: 100%; }
+// .span_2_of_3 { width: 66.13%; }
+// .span_1_of_3 { width: 32.26%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+// @media only screen and (max-width: 480px) {
+// 	.col {  margin: 1% 0 1% 0%; }
+// 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+// }
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
 }
