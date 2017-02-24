@@ -31,7 +31,8 @@ i{
   padding-top: 0.2em;
   padding-left: 30%;
   font-size: 6em;
-  transition: transform .2s
+  transition: transform .4s;
+
   border-bottom: 2px solid white;
 }
 /**    end of icons      **/
@@ -87,7 +88,7 @@ p{
   h3, p{
     transform: translateY(-.1in);
   }
-
+  transition: transform 2s;
   background-color: $body;
   cursor: pointer;
 }
@@ -118,7 +119,7 @@ p{
 /*  COLUMN SETUP  */
 .col {
   background-color: #343536;
-  transition: background 1s, transform 1s;
+  transition: background 2s, transform 2s;
 }
 
 /* Extra small devices (phones, less than 768px) */
