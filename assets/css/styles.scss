@@ -4,14 +4,16 @@ $body: #D4D6D6;
 $h3-color: #E8EAEB;
 
 body {
+  width: 100%;
   background-color: $body;
+  min-width: 420px;
 }
 
-/***    main container div  **/
+/*** bootstrap wrapper **/
 
-.main{
-  margin-left: 1%;
-  margin-right: 1%;
+.container{
+  width:100%;
+  height: 100%;
 }
 
 
@@ -21,7 +23,7 @@ small{
 
 /**    start of icons      **/
 i{
-  color: $h3-color;
+  color: blue;
 
 }
 
@@ -29,17 +31,23 @@ i{
   padding-top: 0.2em;
   padding-left: 30%;
   font-size: 6em;
-  transition: transform .2s
-  // border-bottom: 2px solid white;
+  transition: transform .4s;
+
+  border-bottom: 2px solid white;
 }
 /**    end of icons      **/
 
+
+
+ul{
+  margin-top: 0;
+  background-color: $h3-color;
+}
 
 /**  the line under the icon  **/
 .stick{/*  Bar  */
   border: 2px solid $body;
   margin: 0 auto;
-  /* margin: 0 auto; */
   width: 7em;
   display: block;
   transition: transform .2s
@@ -50,7 +58,6 @@ i{
 
 /**   start of words     **/
 h3{
-// padding-top: 2em;
 font-size: 1.5em;
 padding-left: 4.5em;
 color: $h3-color;
@@ -66,32 +73,8 @@ p{
 /**   end of words      **/
 /****************************************************/
 
-/***       Borders around boxes        **/
-// #one{
-//   border-bottom: 1px solid $body;
-// }
-//
-// #two{
-//   border-bottom: 1px solid $body;
-//   border-right: 1px solid $body;
-//   border-left: 1px solid $body
-// }
-//
-// #three{
-//   border-bottom: 1px solid $body;
-//   border-left: 1px solid $body;
-// }
-//
-// #five{
-//   border-right: 1px solid $body;
-//   border-left: 1px solid $body;
-// }
-
-
-
-
 /**  start of on hover to change background colors  **/
-.col:hover, .col:focus{
+.col:hover {
   .fa, h3, p, {
     color: #343536;
   }
@@ -105,33 +88,29 @@ p{
   h3, p{
     transform: translateY(-.1in);
   }
-
+  transition: transform 2s;
   background-color: $body;
   cursor: pointer;
 }
 
 
-
-// .col:hover{
-//   background-color: white;
-//   cursor: pointer;
-// }
-// .fa:hover{
-//   p{
-//     color: $h3-color;
-//   }
-// }
-
-
+.col:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.fa:hover{
+  p{
+    color: $h3-color;
+  }
+}
 /**  end of on hover     **/
 
 
 
 
 /***********************************************************/
-/**   Reponsive Grid  positioning of  columns             **/
-/*  SECTIONS  */
-.section {
+/*  row  */
+.row {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
@@ -140,31 +119,29 @@ p{
 /*  COLUMN SETUP  */
 .col {
   background-color: #343536;
-  // border-spacing: 1px solid black;
-	display: block;
-	float:left;
-  height: 280px;
-  transition: background 1s, transform 1s;
-  // border-radius: 5px;
-
-  // padding: 0em 0.1em 0em 0.1em;
-
-	// margin: 1% 0 1% 1.6%;
+  transition: background 2s, transform 2s;
 }
-.col:first-child { margin-left: 0; }
 
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF THREE  */
-.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.13%; }
-.span_1_of_3 { width: 32.26%; }
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+.col{
+  margin:1% 0 1% 0%;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .col{
+    margin: 1% 0 1% 0%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .col{
+    margin: 1% 0 1% 0%;
+  }
 }
